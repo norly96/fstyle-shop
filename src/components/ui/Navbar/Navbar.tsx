@@ -18,9 +18,13 @@ import {
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
 import { pixelify } from "@/fonts";
+import { useUIStore } from "src/store/index";
 
 export const Navbar = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isOpen = useUIStore((state) => state.isOpen)
+  const OpenMenu = useUIStore((state) => state.openMenu)
+  const closeMenu = useUIStore((state) => state.closeMenu)
+
   return (
     <header className="border-b border-gray-200">
       <nav
@@ -46,7 +50,7 @@ export const Navbar = () => {
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={OpenMenu}
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -106,36 +110,38 @@ export const Navbar = () => {
                 />
               </svg>
               <span className="ml-2 text-xl font-medium text-black group-hover:text-gray-800">0</span>
-              <span className="sr-only">items in cart, view bag</span>
+              
             </div>
           </Link>
-          <Link
-            href="#"
+          <button
             className="text-lg font-semibold leading-6 text-gray-900"
+            onClick={OpenMenu}
           >
             Menu
-          </Link>
+          </button>
         </div>
       </nav>
 
       {/* View Mobile */}
-      <div className="lg:hidden">
-        <div className="fixed inset-0 z-10" />
+      {
+        isOpen && (
+      <div className="">
+      <div onClick={closeMenu} className="fixed inset-0 z-10 bg-black opacity-30" />
         <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
-            </a>
+            <Link href="#" className="-m-1.5 p-1.5">
+              <Image
+              src={logo}
+              width={0}
+              height={45}
+              alt="Picture of the author"
+            />
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              onClick={closeMenu}
             >
-              <span className="sr-only">Close menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
@@ -173,6 +179,8 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+        )
+      }      
     </header>
   );
 };

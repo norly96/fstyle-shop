@@ -1,15 +1,15 @@
 export interface IProduct {
     //id: string
-    description: string;
+    description?: string;
     images: string[];
-    inStock: number;
+    inStock?: number;
     price: number;
-    sizes: ValidSizes[];
+    sizes?: ValidSizes[];
     slug: string;
-    tags: string[];
+    tags?: string[];
     title: string;
-    type: ValidTypes;
-    gender: 'men'|'women'|'kid'|'unisex'
+    type?: ValidTypes;
+    gender?: 'men'|'women'|'kid'|'unisex'
 }
 
 export type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
