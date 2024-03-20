@@ -5,4 +5,6 @@ export * from "./Products/ProductGridItem"
 export * from "./ui/Title/Title"
 export * from "./Products/SizeSelector"
 export * from "./Products/QuantitySelector"
+export * from "./Products/ProductSlideshow"
+export * from "./Products/ProductMobileSlideshow"
 
