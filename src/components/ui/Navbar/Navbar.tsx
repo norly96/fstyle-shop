@@ -32,7 +32,7 @@ export const Navbar = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="#" className="flex items-center -m-1.5 p-1.5">
+          <Link href="/" className="flex items-center -m-1.5 p-1.5">
             <Image
               src={logo}
               width={0}
@@ -70,10 +70,10 @@ export const Navbar = () => {
             Women
           </Link>
           <Link
-            href="/category/kids"
+            href="/category/kid"
             className="text-lg font-semibold leading-6 text-gray-900"
           >
-            Kids
+            Kid
           </Link>
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-3 lg:flex-1 lg:justify-end">
@@ -93,7 +93,7 @@ export const Navbar = () => {
               />
             </svg>
           </Link>
-          <Link href="#">
+          <Link href="/cart">
             <div className="flex flex-row items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

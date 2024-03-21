@@ -5,8 +5,8 @@ import { initialData } from "src/seed/seed";
 export default function HomePage() {
   const products = initialData.products
   return (
-    <main className="">
-      <Title title="Shop" subtitle="Todos los productos"/>
+    <main className="w-full px-5 lg:px-15">
+      <Title title="Shop" subtitle="All the products"/>
       <ProductGrid products={products}/>
     </main>
   );
