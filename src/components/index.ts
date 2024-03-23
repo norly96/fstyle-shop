@@ -7,4 +7,5 @@ export * from "./Products/SizeSelector"
 export * from "./Products/QuantitySelector"
 export * from "./Products/ProductSlideshow"
 export * from "./Products/ProductMobileSlideshow"
+export * from "./ui/Footer/Footer"
 
