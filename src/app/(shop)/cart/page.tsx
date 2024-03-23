@@ -3,6 +3,7 @@ import Image from "next/image";
 import QuantitySelector from "@/components/Products/QuantitySelector"
 import Link from "next/link";
 import { Title } from "@/components/index";
+import { redirect } from "next/navigation";
 
 const prodCart = [
   initialData.products[0],
@@ -11,6 +12,10 @@ const prodCart = [
 ];
 
 const CartPage = () => {
+
+
+  //redirect('/empty');
+
   return (
     <main className="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 w-full px-5 lg:px-15">
       <Title title="Cart" className="col-span-2"/>
