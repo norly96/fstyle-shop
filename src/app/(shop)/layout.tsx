@@ -1,4 +1,5 @@
 import  { Navbar }   from "@/components/index";
+import Footer from "@/components/ui/Footer/Footer";
 
 export default function ShopLayout({
     children,
@@ -9,6 +10,7 @@ export default function ShopLayout({
       <div >
         <Navbar/>
         {children}
+        <Footer/>
       </div>
     );
   }

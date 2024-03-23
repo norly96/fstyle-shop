@@ -1,6 +1,5 @@
 "use client"
 import { notFound } from 'next/navigation'
-import React from 'react'
 import { Title } from '@/components/ui/Title/Title';
 import { ProductGrid } from '@/components/index';
 import { initialData } from 'src/seed/seed';

@@ -72,7 +72,7 @@ const OrderById = ({params}: Props) => {
 
       {/* Section Right*/}
       <div className="col-span-2 lg:col-span-1 flex flex-col justify-center mt-10 mb-10 lg:mr-12 py-5 lg:py-0 lg:mt-0 bg-white-100 shadow-xl rounded-lg px-4 ">
-      <h1 className="text-2xl font-extrabold mb-2">Delivery Address</h1>
+      <h2 className="mb-2">Delivery Address</h2>
         <div className="flex flex-col">
          
           <span className="text-xl">Dwayne Wade</span>{" "}
@@ -86,7 +86,7 @@ const OrderById = ({params}: Props) => {
           
         </div>
         
-        <h1 className="text-2xl font-extrabold mb-2">Order Summary</h1>
+        <h2 className="mb-2">Order Summary</h2>
         <div className="flex justify-between">
           {" "}
           <span className="text-lg">No. Products</span>{" "}

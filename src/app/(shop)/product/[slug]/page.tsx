@@ -44,14 +44,14 @@ const ProductPage = ({ params }: Props) => {
         {/* Product info hidden overflow-hidden  */}
         <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:max-w-xl lg:px-2 lg:pb-24 lg:pt-10">
           <div className="lg:col-span-2  lg:pr-8">
-            <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+            <h1 className="text-2xl sm:text-3xl">
               {product.title}
             </h1>
           </div>
 
           {/* Options */}
           <div className="mt-4 lg:row-span-3 lg:mt-0">
-            <p className="text-3xl tracking-tight text-gray-900">
+            <p className="text-2xl sm:text-3xl tracking-tight text-black">
               $ {product.price}
             </p>
 

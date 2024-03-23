@@ -9,7 +9,7 @@ export default function AddressPage() {
           <Title title="Address" />
       <div className="flex flex-col lg:flex-row lg:flex-wrap lg:items-center gap-6 mt-3 mx-2 lg:mx-60">
             <div className="w-full lg:w-64 sm:mr-10">
-              <label htmlFor="first-name" className="block text-lg font-medium leading-6 text-black">
+              <label htmlFor="first-name">
                 First name
               </label>
               <div className="mt-2">
@@ -17,13 +17,13 @@ export default function AddressPage() {
                   type="text"
                   name="first-name"
                   id="first-name"
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
 
             <div className="w-full lg:w-64  sm:mr-10">
-              <label htmlFor="last-name" className="block text-lg font-medium leading-6 text-black">
+              <label htmlFor="last-name">
                 Last name
               </label>
               <div className="mt-2">
@@ -31,14 +31,13 @@ export default function AddressPage() {
                   type="text"
                   name="last-name"
                   id="last-name"
-                  
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
 
             <div className="w-full lg:w-svw sm:mr-10 ">
-              <label htmlFor="address" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="address">
                 Address
               </label>
               <div className="mt-2">
@@ -46,14 +45,13 @@ export default function AddressPage() {
                   id="address"
                   name="address"
                   type="text"
-                
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
 
             <div className="w-full lg:w-64 mr-auto sm:mr-10">
-              <label htmlFor="country" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="country">
                 Country
               </label>
               <div className="mt-2">
@@ -61,7 +59,7 @@ export default function AddressPage() {
                   id="country"
                   name="country"
                   autoComplete="country-name"
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 >
                   <option>United States</option>
                   <option>Canada</option>
@@ -71,7 +69,7 @@ export default function AddressPage() {
             </div>
 
             <div className="w-full lg:w-64 sm:mr-10">
-              <label htmlFor="phone" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="phone">
                 Telephone
               </label>
               <div className="mt-2">
@@ -80,13 +78,13 @@ export default function AddressPage() {
                   name="phone"
                   id="phone"
                  
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
 
             <div className="w-full lg:w-64 sm:mr-10">
-              <label htmlFor="city" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="city">
                 City
               </label>
               <div className="mt-2">
@@ -95,13 +93,13 @@ export default function AddressPage() {
                   name="city"
                   id="city"
                   autoComplete="address-level2"
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
 
             <div className="w-full lg:w-64 mr-auto sm:mr-10">
-              <label htmlFor="region" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="region">
                 State / Province
               </label>
               <div className="mt-2">
@@ -110,13 +108,13 @@ export default function AddressPage() {
                   name="region"
                   id="region"
                   autoComplete="address-level1"
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
                </div> 
             </div>
 
             <div className="w-full lg:w-64">
-              <label htmlFor="postal-code" className="block text-lg font-medium leading-6 text-gray-900">
+              <label htmlFor="postal-code">
                 ZIP / Postal code
               </label>
               <div className="mt-2">
@@ -125,11 +123,11 @@ export default function AddressPage() {
                   name="postal-code"
                   id="postal-code"
                   autoComplete="postal-code"
-                  className="block w-full rounded-md border-0 px-1 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-lg sm:leading-6"
+                  className="form-input block w-full"
                 />
               </div>
             </div>
-          {/* </div> */}
+         
         </div>
   
       <div className="mt-6 flex justify-start mx-2 lg:mx-60 mb-10">

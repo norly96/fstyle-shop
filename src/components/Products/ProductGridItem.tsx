@@ -12,7 +12,7 @@ export const ProductGridItem = ({product}:Props) => {
     <div className="rounded-lg overflow-hidden shadow-sm shadow-gray-300 transition-all duration-300 hover:opacity-75 ">
         <Link href={`product/${product.slug}`}><Image src={`/products/${product.images[0]}`} alt={product.title} className='w-full object-cover' width={500} height={500}/>
         </Link>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-2 ml-2">
             <Link href={`product/${product.slug}`}>
                 {product.title}
             </Link>
